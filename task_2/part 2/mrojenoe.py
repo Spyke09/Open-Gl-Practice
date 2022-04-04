@@ -38,14 +38,14 @@ def draw(*args, **kwargs):
         r = rn
         glEnd()
 
-    R = 0.4
+    R = 0.3
     n = 40
     h = 0.5
     h1 = (2 * R) / n
     h2 = -R
     r = 0
 
-    for j in range(n // 2):
+    for j in range(n):
         glBegin(GL_QUAD_STRIP)
         if r * r - h1 * h1 - 2 * h1 * h2 >= 0:
             rn = math.sqrt(r * r - h1 * h1 - 2 * h1 * h2)
