@@ -73,15 +73,15 @@ for x in range(width):
         draw.point((x, y), (255, 255, 255))
 
 
-draw_b((height // 2, 0), (height , 0), (height, 2*height // 3), (height//2-80, height))
-draw_b((height // 2, 0), (0 , 0), (0, 2*height // 3), (height//2+50, height//2))
-draw_b((height//2-80, height), (height//2-80, height), (350, 300), (height//2+50, height//2))
+# draw_b((height // 2, 0), (height , 0), (height, 2*height // 3), (height//2-80, height))
+# draw_b((height // 2, 0), (0 , 0), (0, 2*height // 3), (height//2+50, height//2))
+# draw_b((height//2-80, height), (height//2-80, height), (350, 300), (height//2+50, height//2))
 
 # draw_b((0, height // 2), (0, -88), (height, -88), (height, height // 2))
 # draw_b((0, height // 2), (0, height + 88), (height, height + 88), (height, height // 2))
 
-# draw_b((height // 2, 0), (0, 0), (height, height - 3), (height // 2, height - 2))
-# draw_b((height // 2, 0), (height, 0), (0, height - 3), (height // 2, height - 2))
+draw_b( (height // 2, 0), (height // 2, height//3), (height, height - 3), (height // 2, height - 2))
+draw_b( (height // 2, 0), (height // 2, height//3), (0, height - 3), (height // 2, height - 2))
 
 # draw_b((height // 2, 0), (height // 2, 200), (height, 0), (height, 2*height // 3))
 # draw_b((height // 2, 0), (height // 2, 200), (0, 0), (0, 2*height // 3))

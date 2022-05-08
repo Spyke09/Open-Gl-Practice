@@ -68,13 +68,24 @@ class Line:
                 return Point(left, f(left))
             left, right = (left, (left + right) / 2) if abs(s1) < abs(s2) else ((left + right) / 2, right)
 
-    def oneSide(self, p1, p2):
+    def oneSide(self, point1, point2):
         eps = 0.001
-        if abs(self.a * p1.x + self.b * p1.y + self.c) < eps or abs(self.a * p2.x + self.b * p2.y + self.c) < eps:
+        p1 = self.a * point1.x + self.b * point1.y + self.c
+        p2 = self.a * point2.x + self.b * point2.y + self.c
+        if abs(p1) < eps or abs(p2) < eps:
             return True
-        if (self.a * p1.x + self.b * p1.y + self.c) * (self.a * p2.x + self.b * p2.y + self.c) >= 0:
+        if p1 * p2 >= 0:
             return True
         return False
+
+    def oneSide1(self, point1, point2):
+        p1 = self.a * point1.x + self.b * point1.y + self.c
+        p2 = self.a * point2.x + self.b * point2.y + self.c
+        print(self.a, self.b, self.c)
+        if p1 * p2 >= 0:
+            return True
+        else:
+            return False
 
     def normalize(self):
         eps = 0.001
