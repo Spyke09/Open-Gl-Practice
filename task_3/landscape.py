@@ -1,6 +1,3 @@
-from math import *
-import random
-
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
@@ -37,7 +34,7 @@ def init():
     anglez = 0
     zoom = -1.0 / (200 * 1.1)
     filled = 0
-    h_map = h('map.bmp')
+    h_map = h('assets/map.bmp')
 
 
 # Процедура обработки обычных клавиш
