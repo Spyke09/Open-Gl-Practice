@@ -44,7 +44,7 @@ def init():
     camPOS = Vector3(0, 0, -1)
     camDIR = Vector3(0, 0, 1)
     camUP = Vector3(0, 1, 0)
-    texID = loadImage('assets\sbb.jpg')
+    texID = loadImage('assets\sbbf.jpg')
 
 
 # Процедура обработки обычных клавиш
